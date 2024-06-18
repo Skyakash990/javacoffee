@@ -13,10 +13,18 @@ nav ul{
     display: flex;
     justify-content:space-around;
 }
+nav ul li{
+    background-color: #D2691E;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: 500;
+
+}
 nav ul li a{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: chocolate;
-    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#fff;
+    font-size: 25px;
     text-decoration: none;
     
 }
@@ -46,12 +54,30 @@ form div{
 
 }
 #sbmt{
-    width: 100px;
+    width: 150px;
     border: none;
     background-color: #D2691E;
     color: #fff;
     font-size: 16px;
-    border-radius: 20px;
-    height: 29px;
+    border-radius: 5px;
+    height: 32px;
     margin-bottom: 30px;
 }
+/* toastify css */
+.toastify {
+    display: flex;
+    align-items: center;
+  }
+  .toastify-progress-bar {
+    height: 4px;
+    background: #4caf50;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: progress 3s linear forwards;
+  }
+  @keyframes progress {
+    0% { width: 100%; }
+    100% { width: 0; }
+  }

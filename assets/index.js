@@ -1,4 +1,23 @@
-   // Get form and input elements
+function showToast(message, backgroundColor) {
+    Toastify({
+        text: message,
+        duration: 3000,
+        close: false,
+        gravity: "left", // Position the toast at the top
+        position: "center", // Align the toast to the left
+        style: {
+            background: backgroundColor,
+            color: "#fff"
+        },
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+    }).showToast();
+}
+
+  
+  
+
+ 
+ // Get form and input elements
    let form = document.querySelector("form");
    let nameInput = document.getElementById("name");
    let typeInput = document.getElementById("type");
@@ -68,8 +87,11 @@
    
        // Reset form inputs
        form.reset();
-   
+       let sbmt=document.getElementById("sbmt");
+        sbmt.addEventListener('click', function() {
+        showToast("Order Placed Successfully","brown")
+        });
        // Show success message
-       alert("Order placed successfully!");
+    //    alert("");
    });
    
